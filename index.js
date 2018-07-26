@@ -23,10 +23,12 @@ function destructivelyRemoveFirstKitten() {
 }
 
 function appendKitten(name) {
-  return kittens.splice(0, 1, name);
+  kittens.splice(0, 1, name);
+  return kittens;
 }
 
 function prependKitten(name) {
-  return kittens.slice(0, prependKitten.length - 1);
+  kittens.slice(0, prependKitten.length - 1);
+  return kittens;
 }
 
