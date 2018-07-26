@@ -22,5 +22,9 @@ function destructivelyRemoveFirstKitten() {
 }
 
 function appendKitten(name) {
-  
+  return appendKitten.splice(0, 1, name);
+}
+
+function prependKitten(name) {
+  return prependKitten.slice(0, prependKitten.length - 1);
 }
